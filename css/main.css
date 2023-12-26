@@ -1,0 +1,138 @@
+:root {
+    --site-color-01: #FFFF00;
+    --site-color-02: #7039AA;
+}
+
+@font-face {
+    font-family: TimesNewRoman;
+    src: url(../font/times.ttf);
+}
+
+body {
+    background-color: #30184A;
+}
+
+body::after {
+    position: absolute;
+    background-image: url(../img/SOCIAL-MEDIA-LOGO/Facebook.png) url(../img/SOCIAL-MEDIA-LOGO/Discord.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: TimesNewRoman;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--site-color-02);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 60px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 40px;
+    align-self: center;
+    padding-left: 120px;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.header-main-nav ul {
+    list-style: none;
+}
+
+.header-main-nav ul li {
+    display: inline;
+}
+
+.header-main-nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 60px; 
+    float: left;
+    padding: 0 10px;
+    display: block;
+}
+
+.header-main-nav ul li a:hover {
+    color: var(--site-color-01);
+    font-size: 18px;
+    text-align: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.header-main-cgbcr-logo {
+    position: absolute;
+    width: fit-content;
+    height: 60px;
+    margin-left: 700px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.header-main-cgbcr-logo img {
+    height: 40px;
+    padding: 0 50px 0 50px;
+}
+
+
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-sm-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/SOCIAL-MEDIA-LOGO/Facebook-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-fb:hover {
+    background-image: url(../img/SOCIAL-MEDIA-LOGO/Facebook.png);
+}
+
+.header-main-sm-dc {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/SOCIAL-MEDIA-LOGO/Discord-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-dc:hover {
+    background-image: url(../img/SOCIAL-MEDIA-LOGO/Discord.png);
+}
